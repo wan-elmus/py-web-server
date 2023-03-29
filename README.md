@@ -1,10 +1,10 @@
 ## Server - code run through
 
-![Fetched file contents](https://drive.google.com/file/d/1brkNvGPfGRS8pmY-4TEtymyth5bleAcQ/view?usp=share_link)
+![Fetched file contents](https://drive.google.com/file/d/1A5WVjAWp2GERXC423MrE40NX2Y7jcoJy/view?usp=sharing)
 
-![Error 404 displayed](https://drive.google.com/file/d/1KdZEfltY8rz0TVw9DBxz899Juu3yxpFq/view?usp=share_link)
+![Error 404 displayed](https://drive.google.com/file/d/1KdZEfltY8rz0TVw9DBxz899Juu3yxpFq/view?usp=sharing)
 
-![Running server](https://drive.google.com/file/d/1A5WVjAWp2GERXC423MrE40NX2Y7jcoJy/view?usp=share_link)
+![Running server](https://drive.google.com/file/d/1brkNvGPfGRS8pmY-4TEtymyth5bleAcQ/view?usp=sharing)
 
 The server starts by importing the necessary modules and defining a signal handler function to gracefully terminate the program on receiving a SIGINT signal. Then it creates a socket using the AF_INET and SOCK_STREAM protocols and binds it to the host's IP address and a predefined port number which is 8080 in this program.
 
