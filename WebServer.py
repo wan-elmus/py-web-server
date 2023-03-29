@@ -17,12 +17,26 @@ signal.signal(signal.SIGINT, signal_handler)
 serverSocket = socket(AF_INET, SOCK_STREAM)
 HOST = ''
 PORT = 8080
-serverSocket.bind((HOST, PORT))
+
+# Import the socket module
+import socket
+
+# Get the hostname and IP address of the local machine
+hostname = socket.gethostname()
+ip_address = socket.gethostbyname(hostname)
+
+# Print the IP address and port number of the server
+print("IP address:", ip_address)
+print("Port number:", PORT)
+
+# Bind the server socket to the IP address and port number
+serverSocket.bind((ip_address, PORT))
+
 serverSocket.listen(1)
 
 while True:
     #Establish the connection
-    print('Ready to serve at will...')
+    print('Ready to serve...')
     connectionSocket, addr = serverSocket.accept()
     try:
         message = connectionSocket.recv(1024).decode()
